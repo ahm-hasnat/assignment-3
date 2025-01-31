@@ -18,6 +18,7 @@
 
               fontFamily : {
                 sora :[ 'Sora', 'seriff'],
+                adlam: [ 'ADLaM Display', 'serif']
               }
             }
           }
@@ -27,14 +28,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-    <!-- custom style -->
-   <style>
-    .font-sora{
-        font-family: "Sora", serif;
-    }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
     
-    
-   </style>
    <!-- font awesome -->
    <script src="https://kit.fontawesome.com/882495c089.js" crossorigin="anonymous"></script>
 </head>
@@ -93,16 +90,144 @@
   
    <main>
      <!-- service section -->
-     <section class="w-[90%] mx-auto">
-         
-        <div class="w-full p-2 gap"><!-- card container -->
-           <div class="w-1/4 bg-[#EFEBE3] rounded-xl p-6 flex gap-3 flex-col justify-center text-center items-center"> <!-- card -->
-             <img class="h-20 w-20" src="assets/service.png" alt="">
-             <h3>24/7 Services </h3>
-             <p>We work non-stop so you don’t have to worry—24/7 assistance at your fingertips</p>
+     <section class="w-[80%] mx-auto mb-24">
+         <h1 class="text-accent text-4xl font-semibold mb-8">Services</h1>
+        <div class="w-full p-2 grid gap-4 grid-cols-1 lg:grid-cols-3 justify-center items-center justify-items-center "><!-- card container -->
+
+          <!-- card -->
+           <div class=" bg-[#EFEBE3] rounded-xl p-6 flex gap-6 sm:gap-4 flex-col mx-auto justify-center text-center items-center py-12 lg:py-6"> 
+             <img class="h-20 w-20 p-3 bg-white rounded-full" src="assets/service.png" alt="">
+             <h3 class="text-[#111111] text-2xl font-semibold">24/7 Services </h3>
+             <p class="text-[#111111] text-base font-light">We work non-stop so you don’t have to worry assistance at your fingertips</p>
            </div>
+           <!-- card -->
+           <div class=" bg-[#EFEBE3] rounded-xl p-6 flex gap-6 sm:gap-4 flex-col justify-center text-center items-center py-12 lg:py-6"> 
+            <img class="h-20 w-20 p-3 bg-white rounded-full" src="assets/delivery.png" alt="">
+            <h3 class="text-[#111111] text-2xl font-semibold">Fast Delivery </h3>
+            <p class="text-[#111111] text-base font-light">Quick & Reliable! Fast delivery so you can enjoy your purchase sooner.</p>
+          </div>
+          <!-- card -->
+          <div class=" bg-[#EFEBE3] rounded-xl p-6 flex gap-6 sm:gap-4 py-12 lg:py-6 flex-col justify-center text-center items-center"> 
+            <img class="h-20 w-20 p-3 bg-white rounded-full" src="assets/healthy.png" alt="">
+            <h3 class="text-[#111111] text-2xl font-semibold">Healthy Products  </h3>
+            <p class="text-[#111111] text-base font-light">Healthy Living Starts Here! Fresh,natural, organic, and wholesome choices</p>
+          </div>
         </div> 
    </section>
+
+   <!-- product section -->
+    <section class="w-full p-12 md:p-24 bg-[#EFEBE3]">
+       <h1 class="text-accent font-semibold text-4xl mb-8">Popular Products</h1>
+        <div class="flex flex-col md:flex-row w-full gap-[13px]"><!-- card container -->
+          <!-- big card -->
+          <div class="md:w-[32%] w-full flex h-[21rem] flex-col bg-gradient-to-br from-[#53DB3A] to-[#ffffff] rounded-xl pt-8 pl-6 container">
+              <div class="absolute z-10 mt-4  ml-2"><h1 class="adlam text-[#ffffff] font-normal text-[1.8rem] mb-4">30% off</h1>
+              <p class="mb-4 w-full text-base font-normal text-[#111111]">Discover a world of treats, toys, and <br> essentials handpicked for </p>
+              <button class=" text-start bg-white rounded-lg text-[#111111] font-normal text-lg px-5 py-2  hover:bg-accent hover:text-white cursor-pointer">Buy Now</button></div>
+              <div class="h-full relative z-0 flex justify-end items-end"><img class="w-[12rem] h-[12rem]"  src="assets/vegetable-offer.png" alt=""></div>
+          </div>
+
+          <div class="md:w-[65%] grid grid-cols-2 md:grid-cols-3 gap-[13px] justify-items-center justify-center content-center"> <!-- small card container -->
+              <!--card 1 -->
+                    <div class="flex p-3 bg-white rounded-lg h-fit gap-[13px] items-center w-[14rem]">
+                      <img class="w-[4.5rem] h-[4.5rem] bg-[#EFEBE3] rounded-lg" src="assets/onion.png" alt="">
+                    
+                    <div class="gap-2 flex flex-col">
+                      <p class="text-[#111111] font-normal text-sm"><i class="text-[#FFC107] mr-1 fa-solid fa-star"></i> 4.5</p>
+                      <h4 class="text-[#111111] font-semibold text-base">Onion 1 KG</h4>
+                      <p class="text[#111111] font-medium text-sm">$39.99</p>
+                    </div>
+               </div>
+                <!--card  2-->
+                  <div class="flex p-3 bg-white rounded-lg h-fit gap-[13px] items-center w-[14rem]">
+                    <img class="w-[4.5rem] h-[4.5rem] bg-[#EFEBE3] rounded-lg" src="assets/tomato.png" alt="">
+                  
+                  <div class="gap-2 flex flex-col">
+                    <p class="text-[#111111] font-normal text-sm"><i class="text-[#FFC107] mr-1 fa-solid fa-star"></i> 4.5</p>
+                    <h4 class="text-[#111111] font-semibold text-base">Tomato 500 g</h4>
+                    <p class="text[#111111] font-medium text-sm">$39.99</p>
+                  </div>
+             </div>
+              <!--card 3 -->
+                <div class="flex p-3 bg-white rounded-lg h-fit gap-[13px] items-center w-[14rem]">
+                  <img class="w-[4.5rem] h-[4.5rem] bg-[#EFEBE3] rounded-lg" src="assets/potato.png" alt="">
+                
+                <div class="gap-2 flex flex-col">
+                  <p class="text-[#111111] font-normal text-sm"><i class="text-[#FFC107] fa-solid mr-1 fa-star"></i> 4.5</p>
+                  <h4 class="text-[#111111] font-semibold text-base">Potato 1 KG</h4>
+                  <p class="text[#111111] font-medium text-sm">$39.99</p>
+                </div>
+           </div>
+           <!--card 4 -->
+            <div class="flex p-3 bg-white rounded-lg h-fit gap-[13px] items-center w-[14rem]">
+              <img class="w-[4.5rem] h-[4.5rem] bg-[#EFEBE3] rounded-lg" src="assets/tomato.png" alt="">
+            
+            <div class="gap-2 flex flex-col">
+              <p class="text-[#111111] font-normal text-sm"><i class="text-[#FFC107] fa-solid fa-star mr-1 "></i> 4.5</p>
+              <h4 class="text-[#111111] font-semibold text-base">Tomato 500 g</h4>
+              <p class="text[#111111] font-medium text-sm">$39.99</p>
+             </div>
+           </div>
+             <!--card 5 -->
+
+              <div class="flex p-3 bg-white rounded-lg h-fit gap-[13px] items-center w-[14rem]">
+                <img class="w-[4.5rem] h-[4.5rem] bg-[#EFEBE3] rounded-lg" src="assets/onion.png" alt="">
+              
+              <div class="gap-2 flex flex-col">
+                <p class="text-[#111111] font-normal text-sm"><i class="text-[#FFC107] fa-solid fa-star mr-1"></i> 4.5</p>
+                <h4 class="text-[#111111] font-semibold text-base">Onion 1 KG</h4>
+                <p class="text[#111111] font-medium text-sm">$39.99</p>
+              </div>
+         </div>
+                 <!--card 6 -->
+           
+            <div class="flex p-3 bg-white rounded-lg h-fit gap-[13px] items-center w-[14rem]">
+              <img class="w-[4.5rem] h-[4.5rem] bg-[#EFEBE3] rounded-lg" src="assets/tomato.png" alt="">
+            
+            <div class="gap-2 flex flex-col">
+              <p class="text-[#111111] font-normal text-sm"><i class="text-[#FFC107] fa-solid fa-star mr-1"></i> 4.5</p>
+              <h4 class="text-[#111111] font-semibold text-base">Tomato 500 g</h4>
+              <p class="text[#111111] font-medium text-sm">$39.99</p>
+             </div>
+           </div>
+                   <!--card 7 -->
+            
+              <div class="flex p-3 bg-white rounded-lg h-fit gap-[13px] items-center w-[14rem]">
+                <img class="w-[4.5rem] h-[4.5rem] bg-[#EFEBE3] rounded-lg" src="assets/onion.png" alt="">
+              
+              <div class="gap-2 flex flex-col">
+                <p class="text-[#111111] font-normal text-sm"><i class="text-[#FFC107] fa-solid fa-star mr-1"></i> 4.5</p>
+                <h4 class="text-[#111111] font-semibold text-base">Onion 1 KG</h4>
+                <p class="text[#111111] font-medium text-sm">$39.99</p>
+              </div>
+         </div>
+              <!--card 8 -->
+             
+                <div class="flex p-3 bg-white rounded-lg h-fit gap-[13px] items-center w-[14rem]">
+                  <img class="w-[4.5rem] h-[4.5rem] bg-[#EFEBE3] rounded-lg" src="assets/potato.png" alt="">
+                
+                <div class="gap-2 flex flex-col">
+                  <p class="text-[#111111] font-normal text-sm"><i class="text-[#FFC107] fa-solid fa-star mr-1"></i> 4.5</p>
+                  <h4 class="text-[#111111] font-semibold text-base">Potato 1 KG</h4>
+                  <p class="text[#111111] font-medium text-sm">$39.99</p>
+                </div>
+           </div>
+            <!--card 9 -->
+           
+              <div class="hidden sm:flex p-3  bg-white rounded-lg h-fit gap-[13px] items-center w-[14rem]">
+                <img class="w-[4.5rem] h-[4.5rem] bg-[#EFEBE3] rounded-lg" src="assets/potato.png" alt="">
+              
+              <div class="gap-2 flex flex-col">
+                <p class="text-[#111111] font-normal text-sm"><i class="text-[#FFC107] fa-solid fa-star mr-1"></i> 4.5</p>
+                <h4 class="text-[#111111] font-semibold text-base">Potato 1 KG</h4>
+                <p class="text[#111111] font-medium text-sm">$39.99</p>
+              </div>
+         </div>
+          </div>
+        </div>
+    </section>
+
+  
 </main>
 </body>
 </html>
